@@ -54,6 +54,40 @@ header, footer{
 	word-spacing: 5px;
 }
 
+.mainUscontent{
+	display: flex;
+	flex-direction: column;
+	padding-left: 2rem;
+}
+
+.mainUscontent-item{
+	font-size: 70px;
+	color: darkslategrey;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+span{
+	color: lightsteelblue;
+}
+
+.mainUscontent-itemtwo{
+	font-size: 25px;
+	color: whitesmoke;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.footerList{
+	display: flex;
+}
+
+.footerPage{
+	word-spacing: 70px;
+	letter-spacing: 40px;
+	padding-top: 1rem;
+	font-size: 15px;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
 .indexContainer{
 	display: grid;
 	grid-template-columns: 100%;
@@ -84,6 +118,7 @@ header{
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	padding-bottom: 2rem;
 	color: whitesmoke;
 	text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -97,3 +132,29 @@ footer{
 	padding-top: 2rem;
 }
 
+.usContainer{
+	display: grid;
+	grid-template-columns: 100%; 
+	grid-template-rows: auto auto auto;
+	grid-template-areas: 
+	"header"
+	"mainUs"
+	"footer";
+	background-image: url(../assets/img/bg-4.JPEG);
+    background-attachment: fixed; 
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mainUs{
+	grid-area: mainUs;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding-top: 2rem;
+	padding-right: 12rem;
+	padding-left: 12rem;
+	padding-bottom: 2rem;
+}
