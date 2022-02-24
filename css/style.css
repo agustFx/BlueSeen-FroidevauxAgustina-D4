@@ -24,9 +24,9 @@ a:hover{
 	cursor: pointer;
 }
 
-header, footer{
+/*header, footer{
  	background-color: rgb(128, 128, 128, 0.8);
-}
+} */
 
 .navList{
     display: flex;
@@ -331,6 +331,7 @@ footer{
     	flex-wrap: wrap;
     	justify-content: center;
     	align-items: center;
+    	text-shadow: black 0.1em 0.1em 0.2em;
     }
 
     .indexImg{
@@ -462,4 +463,8 @@ footer{
 	   padding-top: 1rem;
 	   font-size: 13px;
     }
+}
+
+footer, header{
+	background-image: linear-gradient(rgb(240, 255, 240, 0.8), rgb(128, 128, 128, 0.8));
 }
