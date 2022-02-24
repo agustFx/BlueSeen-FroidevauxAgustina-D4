@@ -162,6 +162,10 @@ h3{
 	text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+.mainContact-item{
+	margin: 70px;
+}
+
 .indexContainer{
 	display: grid;
 	grid-template-columns: 100%;
@@ -281,11 +285,33 @@ footer{
 	background-position: center; 
 	background-repeat: no-repeat;
 	background-size: cover;
-
 }
 
 .mainHelpcenter{
 	grid-area: mainHelpcenter;
     display: flex;
     flex-direction: column;
+}
+
+.contactContainer{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 500px auto;
+	grid-template-areas: 
+	"header"
+	"mainContact"
+	"footer";
+    background-image: url(../assets/img/bg-12.JPEG);
+    background-attachment: fixed; 
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mainContact{
+	grid-area: mainContact;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
 }
