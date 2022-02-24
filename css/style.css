@@ -76,6 +76,16 @@ span{
 	text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+.encabezadoValueus-itemB{
+	display: flex;
+	justify-content: center;
+}
+
+.colorForm{
+	color: whitesmoke;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
 .footerList{
 	display: flex;
 }
@@ -156,5 +166,40 @@ footer{
 	padding-top: 2rem;
 	padding-right: 12rem;
 	padding-left: 12rem;
+	padding-bottom: 2rem;
+}
+
+.valueusContainer{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto auto auto;
+	grid-template-areas: 
+	"header"
+	"mainValueus"
+    "valueusContent"
+	"footer";
+	background-image: url(../assets/img/bg-7.JPEG);
+    background-attachment: fixed; 
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.mainValueus{
+	grid-area: mainValueus;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: whitesmoke;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.valueusContent{
+	grid-area: valueusContent;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-around;
+	align-items: center;
 	padding-bottom: 2rem;
 }
