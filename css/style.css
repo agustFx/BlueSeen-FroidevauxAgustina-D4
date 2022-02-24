@@ -86,6 +86,70 @@ span{
 	text-shadow: black 0.1em 0.1em 0.2em;
 }
 
+.helpcenterEncabezado{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: flex-end;
+    font-size: 47px;
+    padding-right: 1rem;
+}
+
+.encabezadoColorone{
+    color: darkslategray;
+    line-height: 135px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.encabezadoColortwo{
+    color: cadetblue;
+    line-height: 15px;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.encabezadoColorthree{
+   color: lightsteelblue;
+   line-height: 135px;
+   text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.musicBox{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 2rem;
+
+}
+
+.boxTitle{
+	color: lightsteelblue;
+	font-size: 25px;
+	text-shadow: black 0.1em 0.1em 0.2em;
+}
+
+.listTitle{
+	color: whitesmoke;
+	font-size: 25px;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	padding-left: 2rem;
+}
+
+h3{
+    color: whitesmoke;
+	font-size: 25px;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	padding-left: 2rem;
+}
+
+.preventionList{
+	display: flex;
+	flex-direction: column;
+	padding-top: 1rem;
+	padding-left: 15rem;
+	font-size: 20px;
+}
+
 .footerList{
 	display: flex;
 }
@@ -202,4 +266,26 @@ footer{
 	justify-content: space-around;
 	align-items: center;
 	padding-bottom: 2rem;
+}
+
+.helpcenterContainer{
+	display: grid;
+	grid-template-columns: 100%;
+	grid-template-rows: auto auto auto;
+	grid-template-areas:
+	"header"
+	"mainHelpcenter"
+	"footer";
+	background-image: url(../assets/img/bg-11.JPEG);
+    background-attachment: fixed; 
+	background-position: center; 
+	background-repeat: no-repeat;
+	background-size: cover;
+
+}
+
+.mainHelpcenter{
+	grid-area: mainHelpcenter;
+    display: flex;
+    flex-direction: column;
 }
